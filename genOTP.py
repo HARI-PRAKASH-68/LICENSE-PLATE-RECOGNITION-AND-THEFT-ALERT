@@ -10,10 +10,10 @@ def send_otp(email, otp):
     # Replace these values with your Gmail account details
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    smtp_username = 'harilicenseplaterecognition@gmail.com'
-    smtp_password = 'xhrs qfxn kokv muhu'
+    smtp_username = 'usermail'
+    smtp_password = 'password'
 
-    sender_email = 'harilicenseplaterecognition@gmail.com'
+    sender_email = 'senderemail'
     receiver_email = email
 
     subject = 'Your OTP'
