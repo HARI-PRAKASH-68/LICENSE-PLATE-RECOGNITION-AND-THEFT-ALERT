@@ -17,7 +17,7 @@ pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tessera
 # List of authorized vehicle numbers
 authorized_vehicle_numbers = ["ABC123", "XYZ456", "123ABC", "12AB34CD"]
 def send_email(detected_plate):
-    sender_email = "harilicenseplaterecognition@gmail.com"  # Change this to your email
+    sender_email = "sender email"  # Change this to your email
     subject = "License Plate Detected"
     body = f"License Plate {detected_plate} was detected at {time.strftime('%Y-%m-%d %H:%M:%S')}"
 
@@ -37,7 +37,7 @@ def send_email(detected_plate):
 
             with smtplib.SMTP("smtp.gmail.com", 587) as server:
                 server.starttls()  # Initiate TLS connection
-                server.login(sender_email, "xhrs qfxn kokv muhu")  
+                server.login(sender_email, "Password")  
                 server.sendmail(sender_email, recipient_email, message.as_string())
             print("Email sent successfully")
     except smtplib.SMTPException as e:
